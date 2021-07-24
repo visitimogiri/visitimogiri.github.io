@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en" class="backdrop">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>WISATA KULINER IMOGIRI</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="styleplain.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- <div class="overlay"></div> -->
+  <header class="header" id="HOME">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <i class="material-icons" aria-hidden="true">home</i>
+        </a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="KATEGORI.html" class="nav-link">Kategori</a>
+            </li>
+            <li class="nav-item">
+                <a href="TENTANG KAMI.html" class="nav-link">Tentang Kami</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+  </header>
+
+  <div class="title">
+    <h1>WISATA KULINER</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-kuliner">
+      <a href="BUBUR IMOGIRI.html" target="_blank" class="col-link">
+      <img src="img/bubur.png" alt="" class="img-kuliner">
+      <figcaption>Kuliner Bubur Imogiri</figcaption>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>KKN IMOGIRI 2021</p>
+  </div>
+</body>

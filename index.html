@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>VISIT IMOGIRI</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- <div class="overlay"></div> -->
+  <header class="header" id="HOME">
+    <nav class="navbar">
+        <a href="#HOME" class="nav-logo active">
+          <i class="material-icons" aria-hidden="true">home</i>
+        </a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="KATEGORI.html" class="nav-link">Kategori</a>
+            </li>
+            <li class="nav-item">
+                <a href="TENTANG KAMI.html" class="nav-link">Tentang Kami</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+  </header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">
+          AYO <i>DOLAN</i> KE<br>IMOGIRI!
+    </h1>
+  </div>
+</section>
+<div class="scroll">
+  <h3>
+    <a href="#TENTANGIMOGIRI" class="scroll-link">
+      Lihat Selengkapnya<br>
+      <i class="material-icons" aria-hidden="true" >expand_more</i>
+    </a>
+  </h3>
+</div>
+
+<section class="info">
+  <div class="info-content" id="TENTANGIMOGIRI">
+    <h1 class="info-title">
+          KAPANEWONAN IMOGIRI
+    </h1>
+    <h3 class="info-subtitle">
+      Kapanewon Imogiri berada di sebelah Tenggara Ibukota Kabupaten Bantul,
+      <br>dengan luas wilayah 5.448,6880 ha dan memiliki
+      <br>wilayah administrasi yang mencakup 8 Kalurahan :
+      <br>1. Kalurahan Selopamioro,
+      <br>2. Kalurahan Sriharjo,
+      <br>3. Kalurahan Kebonagung,
+      <br>4. Kalurahan Imogiri,
+      <br>5. Kalurahan Karangtalun,
+      <br>6. Kalurahan Karangtengah,
+      <br>7. Kalurahan Wukirsari,
+      <br>8. Kalurahan Girirejo
+    </h3>
+  </div>
+  <iframe width="420" height="315" class="video"
+    src="https://www.youtube.com/embed/ybVKK0oaS9Q">
+  </iframe>
+</section>
+
+  <div class="footer">
+    <p>KKN IMOGIRI 2021</p>
+  </div>
+</body>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>KATEGORI WISATA IMOGIRI</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet">
+    <link href="styleplain.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- <div class="overlay"></div> -->
+  <header class="header" id="HOME">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <i class="material-icons" aria-hidden="true">home</i>
+        </a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="KATEGORI.html" class="nav-link active">Kategori</a>
+            </li>
+            <li class="nav-item">
+                <a href="TENTANG KAMI.html" class="nav-link">Tentang Kami</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+  </header>
+
+  <div class="row overlay">
+    <div class="column"></div>
+    <div class="column">
+      <a href="WISATA ALAM.html" target="_blank" class="col-link">
+      <img src="img/ic-alam.png" alt="" class="img">
+      <figcaption><b>WISATA ALAM</b></figcaption>
+      </a>
+    </div>
+    <div class="column">
+      <a href="WISATA BUDAYA.html" target="_blank" class="col-link">
+      <img src="img/ic-budaya.png" alt="" class="img">
+      <figcaption><b>WISATA BUDAYA</b></figcaption>
+      </a>
+    </div>
+    <div class="column"></div>
+  </div>
+
+  <div class="row overlay">
+    <div class="column"></div>
+    <div class="column">
+      <a href="WISATA SEJARAH & RELIGI.html" target="_blank" class="col-link">
+      <img src="img/ic-sejarah.png" alt="" class="img">
+      <figcaption><b>WISATA SEJARAH & RELIGI</b></figcaption>
+      </a>
+    </div>
+    <div class="column">
+      <a href="WISATA KULINER.html" target="_blank" class="col-link">
+      <img src="img/ic-kuliner.png" alt="" class="img">
+      <figcaption><b>WISATA KULINER</b></figcaption>
+      </a>
+    </div>
+    <div class="column"></div>
+  </div>
+
+  <div class="footer">
+    <p>KKN IMOGIRI 2021</p>
+  </div>
+</body>
