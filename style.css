@@ -205,7 +205,7 @@ a {
 .null {
   position: bottom absolute;
   background-color: rgba(0, 0, 0, 0.3);
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   width: 100%;
 }
 
@@ -220,9 +220,6 @@ a {
   color: rgb(255, 239, 13);
 }
 
-.video{
-  margin-right: 5rem;
-}
 
 /*---------INFO---------*/
 
@@ -245,8 +242,27 @@ a {
   width: 100%;
   height: 100%;
 }
+.column {
+  float: left;
+  font-size: 2rem;
+  padding: 2rem;
+  width: 50%;
+  height: 10%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .info-content {
-  position: relative; 
   font-family: "Monserrat", sans-serif;
   color: white;
   text-align: center;
@@ -254,6 +270,8 @@ a {
 
 .info-title {
   font-size: 7rem;
+  margin-left : 10%;
+  margin-right : 10%;
   font-weight: 600;
   margin-bottom: 0;
   text-align: left;
@@ -261,11 +279,25 @@ a {
 
 .info-subtitle {
   font-size: 1.5rem;
+  margin-left : 10%;
+  margin-right : 10%;
   font-weight: normal;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   text-align: left;
+}
+.video{
+  position: bottom;
+  margin-top:25%;
+  width : 80%;
+}
 
+@media only screen and (max-width: 768px) {
+.video{
+  position: bottom;
+  margin-top:45%;
+  width : 80%;
+}
 }
 
 @media only screen and (max-width: 500px) {
@@ -274,7 +306,17 @@ a {
     font-weight: 600;
     margin-bottom: 0;
   }
-
+  .column {
+    float: left;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 10%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   .scroll {
     position: bottom absolute;
     padding-bottom : 1rem;
@@ -287,12 +329,88 @@ a {
     color: white;
     text-align: center;
   }
-
-
-
-  .video{
-    position: bottom;;
+  .info-title {
+    margin-left : 10%;
+    margin-right : 10%;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
   }
+  
+  .info-subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-left : 10%;
+    margin-right : 10%;
+    margin-top: 3rem;
+    text-align: left;
+  }
+  .video{
+    width : 70%;
+    height : 70%;
+  }
+}
+
+/*---------KATEGORI----------*/
+.col-kategori {
+  float: left;
+  font-size: 2rem;
+  padding: 2rem;
+  width: 25%;
+  height: 10%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img{
+  float: center;
+  padding: 1rem;
+  font-size: 2rem;
+  width: 100%;
+  height: 10%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+}
+
+.col-link{
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.col-link:hover{
+  font-weight: bold;
+  color: rgb(255, 239, 13);
+}
+
+@media only screen and (max-width: 500px){
+.img{
+  float: center;
+  padding: 1rem;
+  font-size: 2rem;
+  width: 50%;
+  height: 10%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.col-kategori {
+  float: left;
+  font-size: 2rem;
+  padding: 2rem;
+  width: 100%;
+  height: 10%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 }
 
 /*---------FOOTER---------*/

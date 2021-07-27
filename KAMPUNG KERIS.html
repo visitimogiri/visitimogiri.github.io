@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en" class="backdrop">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>KAMPUNG KERIS BANYUSUMURUP</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="styleplain.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- <div class="overlay"></div> -->
+  <header class="header" id="HOME">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <i class="material-icons" aria-hidden="true">home</i>
+        </a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="KATEGORI.html" class="nav-link">Kategori</a>
+            </li>
+            <li class="nav-item">
+                <a href="TENTANG KAMI.html" class="nav-link">Tentang Kami</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+  </header>
+
+  <div class="title-article">
+    <h1>KAMPUNG KERIS BANYUSUMURUP</h1>
+  </div>
+  
+  <div class="row">
+    <div class="article">
+      <img src="img/keris-2.jpeg" class="img-article">
+    <p>
+      <br>Di Imogiri, Bantul, Yogyakarta, ada desa yang dikenal sebagai kampung keris, yaitu Desa Banyusumurup. Hal ini karena ratusan warga desa merupakan perajin keris. Keris Banyusumurup cukup terkenal. Salah satu pelanggannya adalah Presiden RI ke-6 Susilo Bambang Yudhoyono (SBY) yang memakainya untuk acara pernikahan Edhie Baskoro.
+      <br>
+      <br>Sejak tahun 1950-an, wilayah ini memang terkenal dengan kerajinan kerisnya. Hal ini karena orang-orang percaya bahwa dulunya daerah yang merupakan bekas keraton Mataram ini ditinggali para empu pembuat keris. Oleh karena itu, tidak heran jika hingga saat ini masih banyak masyarakat Banyusumurup yang melestarikan kerajinan keris. Konon, asal muasal para empu pengrajin keris ini adalah dari seorang empu yang melarikan diri dan menetap di Banyusumurup saat Majapahit dilanda perang.
+      <br>
+      <br>Pembuatan keris dilakukan secara semi modern, yaitu dengan menggunakan peralatan tradisional yang dikembangkan menjadi semi manual, bahkan, masih banyak pengrajin yang murni menggunakan peralatan tradisional. Pembuatan keris menggunakan teknik tempa yang rumit. Tingkat kerumitan ditentukan oleh seni tempa pamor motif pada logamnya.
+      <br>
+    </p>
+    <h1> <br><br> </h1>
+    <p>
+      Sumber :<br>
+      <ol>
+      <li><a href="https://finance.detik.com/foto-bisnis/d-5480460/potret-kampung-keris-di-imogiri-yogyakarta/3 " class="col-link" target="_blank">
+      finance detik<br></a></li>
+      <li><a href="https://news.detik.com/berita/d-5480607/cerita-perajin-keris-imogiri-dapat-pesanan-sby-hingga-jual-rp-100-juta" class="col-link" target="_blank">
+      detik news</a></li>
+      <li><a href="https://jogja.antaranews.com/berita/344594/banyusumurup-kampung-kerajinan-keris-peninggalan-majapahit" class="col-link" target="_blank">
+      antaranews</a></li>
+    </ol>
+    </p>
+    </div>
+  </div>
+    
+    <h1>
+      <br>
+    </h1>
+  </div>
+
+  <div class="footer">
+    <p>KKN IMOGIRI 2021</p>
+  </div>
+</body>
